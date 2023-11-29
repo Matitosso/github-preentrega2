@@ -1,0 +1,244 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.grilla{
+    background-color: fuchsia;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+    gap: 0px 0px; 
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: 
+      "headerBox"
+      "mainBox"
+      "footerBox"; 
+   
+    
+    
+}
+.headerBox{
+    grid-area: headerBox;
+    background-color: aqua;    
+    height: 10vh;
+    font-size: 1.5rem;
+    text-align: center;    
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 200 px;
+}
+.logo{
+    background-color: green;
+    border: red solid 2px;
+}
+.portada{
+    background-color: yellow;
+    border: red solid 2px;
+
+}
+.vacio{
+    background-color: grey;
+    border: red solid 2px;
+
+}
+
+.mainBox{
+    grid-area: mainBox;
+    background-color: #648c9a;    
+    font-size: 1.5rem;
+    text-align: center;    
+    display: grid;    
+    margin:20px;
+            
+}
+.carrusel{
+    background-color: white;
+    height: 300px;
+    font-size: 1.5rem;
+    border: blue solid 2px;
+    text-align: center;    
+    display: grid; 
+
+}
+.categorias{
+    background-color: #e40c0c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    grid-template-areas:
+      "catA catPI catPE";
+      justify-items: center;
+      align-items: center;
+
+} 
+     
+.catA { 
+    grid-area: catA; 
+    background-color: yellow;
+    border: red solid 2px;
+    }
+      
+.catPI { 
+    grid-area: catPI; 
+    background-color: yellow;
+    border: red solid 2px;
+    }
+      
+.catPE { 
+    grid-area: catPE; 
+    background-color: yellow;
+    border: red solid 2px;
+    }
+
+.destacados {  
+    display: grid;
+    background-color: #5500ff;
+    border: red solid 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas:
+    "destUno destDos destTres destCuatro";
+}
+
+.destUno { 
+    grid-area: destUno; 
+    background-color: yellow;
+    border: red solid 2px;
+}
+
+.destDos { 
+    grid-area: destDos;
+    background-color: yellow;
+    border: red solid 2px;
+}
+
+.destTres {
+    grid-area: destTres; 
+    background-color: yellow;
+    border: red solid 2px;
+}
+      
+.destCuatro {
+    grid-area: destCuatro;
+    background-color: yellow;
+    border: red solid 2px;
+}  
+
+.footerBox { 
+    display: grid;
+    background-color: #00c8ff;
+    border: red solid 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "navegacion iconMP cotacto redSocial";
+  }
+  
+.navegacion { 
+    grid-area: navegacion; 
+    background-color: yellow;
+    border: red solid 2px;
+}
+  
+.iconMP { 
+    grid-area: iconMP; 
+    background-color: yellow;
+    border: red solid 2px;
+}
+  
+.contacto { 
+    grid-area: cotacto; 
+    background-color: yellow;
+    border: red solid 2px;
+}
+  
+.redSocial { 
+    grid-area: redSocial; 
+    background-color: yellow;
+    border: red solid 2px;
+}  
+
+.grillaProducto{
+    background-color: fuchsia;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "headerBox"
+      "mainProduc"
+      "footerBox";
+}
+.mainProduc {  
+    display: grid;
+    background-color: yellow;
+    border: red solid 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: center;
+    grid-template-areas:
+    "productUno productDos productTres"
+    "productCuatro productCinco productSeis";
+
+}
+  
+.productUno { 
+    grid-area: accesUno; 
+    background-color: #00ff48;
+    border: red solid 2px;
+}
+  
+.productDos { 
+    grid-area: accesDos; 
+    background-color: #00ff48;
+    border: red solid 2px;
+}
+  
+.productTres { 
+    grid-area: accesTres;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productCuatro { 
+    grid-area: accesCuatro;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productCinco { 
+    grid-area: accesCinco;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productSeis { 
+    grid-area: accesSeis;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+
