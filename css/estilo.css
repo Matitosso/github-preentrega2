@@ -4,51 +4,97 @@
     padding:0;
     box-sizing:border-box;
 }
-
-.grilla{
-    background-color: fuchsia;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
-    gap: 0px 0px; 
-    justify-items: stretch;
-    align-items: stretch;
-    grid-template-areas: 
-      "headerBox"
-      "mainBox"
-      "footerBox"; 
-   
-    
-    
+ul{
+    list-style-type: none;
 }
+
+
+body{
+    background-color: #b0f8b0;
+    background-image: url(../iconos/imagenFondo.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-with: 480px){
+    body{
+        background-color: grey;        
+    }
+    .grilla{
+        background-color: fuchsia;
+        width: 100 vw;
+        height: 100 vh;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas: 
+          "headerBox"
+          "mainBox"
+          "footerBox";    
+        
+    }
+}
+
+@media screen and (max-with: 768px){
+    body{
+        background-color: grey;        
+    }
+    .grilla{
+        background-color: fuchsia;
+        width: 100 vw;
+        height: 100 vh;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+        gap: 0px 0px; 
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas: 
+          "headerBox"
+          "mainBox"
+          "footerBox";    
+        
+    }
+}
+
+
+
+
+
 .headerBox{
     grid-area: headerBox;
-    background-color: aqua;    
-    height: 10vh;
-    font-size: 1.5rem;
-    text-align: center;    
+    background-color: #8EB92A;        
+    height: 15vh;
+    font-size: 1.0rem;
+    text-align: center;
+    align-items: flex-end;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-rows: 200 px;
 }
 .logo{
-    background-color: green;
+    background-color: #8EB92A;
     border: red solid 2px;
+    align-items: flex-start;
+    
 }
 .portada{
-    background-color: yellow;
+    background-color: #8EB92A;
     border: red solid 2px;
+
 
 }
 .vacio{
-    background-color: grey;
+    background-color: #8EB92A;
     border: red solid 2px;
 
 }
 
 .mainBox{
     grid-area: mainBox;
-    background-color: #648c9a;    
+        
     font-size: 1.5rem;
     text-align: center;    
     display: grid;    
@@ -57,15 +103,17 @@
 }
 .carrusel{
     background-color: white;
-    height: 300px;
+    height: 400px;
     font-size: 1.5rem;
     border: blue solid 2px;
-    text-align: center;    
+    text-align: center;        
     display: grid; 
+    justify-content: space-around;
+    
 
 }
 .categorias{
-    background-color: #e40c0c;
+    background-color: orange;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr;
@@ -139,8 +187,9 @@
 
 .footerBox { 
     display: grid;
-    background-color: #00c8ff;
+    background-color: #F5B565;
     border: red solid 2px;
+    text-align: left;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr;
     grid-auto-rows: 1fr;
@@ -155,25 +204,28 @@
   
 .navegacion { 
     grid-area: navegacion; 
-    background-color: yellow;
+    
     border: red solid 2px;
 }
   
 .iconMP { 
-    grid-area: iconMP; 
-    background-color: yellow;
-    border: red solid 2px;
+    grid-area: iconMP;     
+    border: red solid 2px;    
+    justify-content:space-around;
+    
+    
+    
 }
   
 .contacto { 
     grid-area: cotacto; 
-    background-color: yellow;
+    
     border: red solid 2px;
 }
   
 .redSocial { 
     grid-area: redSocial; 
-    background-color: yellow;
+    
     border: red solid 2px;
 }  
 
@@ -190,18 +242,21 @@
 }
 .mainProduc {  
     display: grid;
+    font-size: 1.5rem;
+    text-align: center;           
+    margin:20px;
     background-color: yellow;
     border: red solid 2px;
+    grid-auto-flow: column;    
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr;
-    grid-auto-rows: 1fr;
-    gap: 50px 50px;
-    grid-auto-flow: row;
-    justify-content: stretch;
-    justify-items: center;
+    grid-template-rows: 1fr 1fr;    
+    gap: 10px 10px;    
     grid-template-areas:
     "productUno productDos productTres"
     "productCuatro productCinco productSeis";
+
+    align-content: center; 
+    justify-content: center;
 
 }
   

@@ -16,40 +16,142 @@
 <div class="grilla">    
 
     <header class="headerBox">
-        <div class="logo">Logo</div>
+        <div class="logo">
+        <a href="index.html"><img src="./iconos/logo.png" width="400px" alt="Icono Vivero El Plantado"></a>
+        </div>   
+            
+        <div class="portada">        
+            <a href="index.html">Inicio</a>       
+        </div>
+        <div class="portada">
+        <a href="./paginas/quienesSomos.html">¿Quienes somos?</a>
+        </div>
+        <div class="portada">
+        <a href="#categoria">Productos</a>
+        </div>
+        <div class="portada">
+        <a href="./paginas/tips.html">Tips y cuidados</a>
+        </div>  
+         
+
+        <div class="vacio">
+
+        </div>
     
-        <div class="portada">Inicio</div>
-        <div class="portada">¿Quienes somos?</div>
-        <div class="portada">Prodictos</div>
-        <div class="portada">Tips y cuidados</div> 
 
-        <div class="vacio">Espacio</div>
-
-    </header>
+    </header>    
+    <br>
+    
 
     <main class="mainBox">
-        <div class="carrusel">Carrusel</div>
+        <div class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenPlanta/plantaInterior/potus.jpg" class="d-block w-auto" width="300px" height="397px" alt="Postus">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenPlanta/plantaExterior/jazminparaguayo.jpg" class="d-block w-auto" width="300px" height="397px" alt="Jazmin paraguayo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenAccesorio/portamaceta.png" class="d-block w-auto" width="300px" height="397px" alt="Portamacetas">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <br>        
 
         <div class="categorias">
-            <div class="catA">Accesorios</div>
-            <div class="catPI">Plantas de interior</div>
-            <div class="catPE">Plantas de exterior</div>
+            <div class="catA">
+                <a href="./paginas/accesorios.html"><img src="./imagenAccesorio/categoriaAccesorios.png" width="400px" height="250px" alt="Categoria accesorios"></a>
+                <h4>Accesorios</h4>
+            </div>            
+            <div class="catPI">
+                <a href="./paginas/plantaInteriro.html"><img src="./imagenPlanta/categoriaInteriro.png" width="400px" height="250px" alt="Categoria plantas de interiror"></a>
+                <h4>Plantas de interior</h4>
+            </div>
+            <div class="catPE">
+                <a href="./paginas/plantaExterior.html"><img src="./imagenPlanta/categoriaExterior.png" width="400px" height="250px" alt="Categoria Plantas exterior"></a>
+                <h4>Plantas de exterior</h4>
+            </div>
+        </div>
+        <br>
+
+        <div class="destacados">
+            
+            <div class="destUno">
+                <img src="./imagenPlanta/plantaInterior/palodeagua.jpg" width="300px" height="200px" alt="Producto destacado 1">
+                <h5>Destacado 1</h5> 
+                <p>Precio</p>               
+            </div>            
+            <div class="destDos">
+                <img src="./imagenAccesorio/portamaceta.png" width="300px" height="200px" alt="Producto destacado 2">
+                <h5>Destacado 2</h5>
+                <p>Precio</p>
+            </div>
+            <div class="destTres">
+                <img src="./imagenAccesorio/tijera.png" width="300px" height="200px" alt="Producto destacado 3">
+            <h5>Destacado 3</h5>
+            <p>Precio</p>
+            </div>
+            <div class="destCuatro">
+                <img src="./imagenPlanta/plantaInterior/potus.jpg" width="300px" height="200px" alt="Producto destacado 4">
+                <h5>Destacado 4</h5>
+                <p>Precio</p>
+            </div>
         </div>
         
-        <div class="destacados">
-            <div class="destUno">Destacado 1</div>
-            <div class="destDos">Destacado 2</div>
-            <div class="destTres">Destacado 3</div>
-            <div class="destCuatro">Destacado 4</div>
-        </div>
 
     </main>
 
     <footer class="footerBox">
-        <div class="navegacion">Navegacion</div>
-        <div class="iconMP">Medios de pago</div>
-        <div class="contacto">Contactos</div>
-        <div class="redSocial">Redes sociales</div>
+        <div class="navegacion">Navegacion
+            <ul><a href="index.html">Inicio</a></ul>
+            <ul><a href="#Categorias">Productos</a></ul>
+            <ul><a href="./paginas/quienesSomos.html">¿Quienes somos?</a></ul>
+            <ul><a href="./paginas/tips.html">Tips y cuidados</a></ul>
+        </div>
+        <div class="iconMP">Medios de pago
+            <div>
+        <img src="./iconos/visa.png" alt="VISA">
+        </div>
+        <div>
+        <img src="./iconos/mastercard.png" alt="Master Card">
+        </div>
+        <div>
+        <img src="./iconos/mercadopago.png" alt="Mercado Pago">
+        </div>
+        <div>
+        <img src="./iconos/rapipago.png" alt="Rapipago">
+        </div>
+        </div>
+        <div class="contacto">Contactos
+        <ul>Telefono: xxx-xxxxxx</ul>
+        <ul>E-mail: viveroelplantado@vivero.com.ar</ul>
+        <ul>Ubicacion: Cerca de tu hogar 864</ul>
+        </div>
+        <div class="redSocial">Redes sociales
+            <div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./iconos/instagram.png" alt="Instagram"></a>
+        </div>
+        <div>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./iconos/facebook.png" alt="Facebook"></a>
+        </div>
+        </div>
 
     </footer>
     
