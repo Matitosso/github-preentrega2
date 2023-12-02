@@ -65,7 +65,8 @@ body{
 
 .headerBox{
     grid-area: headerBox;
-    background-color: #8EB92A;        
+    background-color: #8EB92A; 
+    border: #ffcd43 solid 1px;       
     height: 15vh;
     font-size: 1.0rem;
     text-align: center;
@@ -75,26 +76,21 @@ body{
     grid-template-rows: 200 px;
 }
 .logo{
-    background-color: #8EB92A;
-    border: red solid 2px;
+    background-color: #8EB92A;    
     align-items: flex-start;
     
 }
 .portada{
     background-color: #8EB92A;
-    border: red solid 2px;
-
-
+    
 }
 .vacio{
     background-color: #8EB92A;
-    border: red solid 2px;
-
+    
 }
 
 .mainBox{
-    grid-area: mainBox;
-        
+    grid-area: mainBox;        
     font-size: 1.5rem;
     text-align: center;    
     display: grid;    
@@ -102,18 +98,17 @@ body{
             
 }
 .carrusel{
-    background-color: white;
+    background-color: #b6b6b6;
     height: 400px;
     font-size: 1.5rem;
-    border: blue solid 2px;
+    border: #f07b2d solid 1px;
     text-align: center;        
     display: grid; 
     justify-content: space-around;
     
-
 }
 .categorias{
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.399);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr;
@@ -130,25 +125,25 @@ body{
 .catA { 
     grid-area: catA; 
     background-color: yellow;
-    border: red solid 2px;
+    border: red solid 1px;
     }
       
 .catPI { 
     grid-area: catPI; 
     background-color: yellow;
-    border: red solid 2px;
+    border: red solid 1px;
     }
       
 .catPE { 
     grid-area: catPE; 
     background-color: yellow;
-    border: red solid 2px;
+    border: red solid 1px;
     }
 
 .destacados {  
     display: grid;
-    background-color: #5500ff;
-    border: red solid 2px;
+    background-color: rgba(222, 189, 0, 0.316);
+    border: #f07b2d solid 1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr;
     grid-auto-rows: 1fr;
@@ -164,31 +159,31 @@ body{
 .destUno { 
     grid-area: destUno; 
     background-color: yellow;
-    border: red solid 2px;
+    border: gold solid 2px;
 }
 
 .destDos { 
     grid-area: destDos;
     background-color: yellow;
-    border: red solid 2px;
+    border: gold solid 2px;
 }
 
 .destTres {
     grid-area: destTres; 
     background-color: yellow;
-    border: red solid 2px;
+    border: gold solid 2px;
 }
       
 .destCuatro {
     grid-area: destCuatro;
     background-color: yellow;
-    border: red solid 2px;
+    border: gold solid 2px;
 }  
 
 .footerBox { 
     display: grid;
     background-color: #F5B565;
-    border: red solid 2px;
+    border: #ffcd43 solid 1px;
     text-align: left;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr;
@@ -203,30 +198,24 @@ body{
   }
   
 .navegacion { 
-    grid-area: navegacion; 
+    grid-area: navegacion;
     
-    border: red solid 2px;
 }
   
 .iconMP { 
-    grid-area: iconMP;     
-    border: red solid 2px;    
-    justify-content:space-around;
-    
-    
+    grid-area: iconMP;      
+    justify-content:space-around;    
     
 }
   
 .contacto { 
-    grid-area: cotacto; 
-    
-    border: red solid 2px;
+    grid-area: cotacto;     
+
 }
   
 .redSocial { 
-    grid-area: redSocial; 
-    
-    border: red solid 2px;
+    grid-area: redSocial;     
+
 }  
 
 .grillaProducto{
@@ -259,7 +248,9 @@ body{
     justify-content: center;
 
 }
-  
+
+
+
 .productUno { 
     grid-area: accesUno; 
     background-color: #00ff48;
