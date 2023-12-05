@@ -1,0 +1,68 @@
+.mainProduc {  
+    display: grid;
+    font-size: 1.5rem;
+    text-align: center;  
+    padding: 20px;         
+    margin:20px;
+    background: linear-gradient(to top,$colorMainProd);    
+    border: #ff902f;
+    grid-auto-flow: column;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
+    gap: 50px 10px;    
+    grid-template-areas:
+    "productUno productDos productTres"
+    "productCuatro productCinco productSeis";
+    justify-items: center;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    div{
+        background-color: $colorCajaProd;
+        border: #a29595 solid 2px;
+        width: auto;
+        height: auto;
+    }    
+    img{
+        width:300px;
+        height:200px;
+    }
+    a{
+        color:black;
+    }
+    
+    
+}
+.product:hover{
+    transform: scale($escalaProd);
+}
+.productUno { 
+    grid-area: accesUno; 
+    
+    
+}
+  
+.productDos { 
+    grid-area: accesDos; 
+    
+}
+  
+.productTres { 
+    grid-area: accesTres;
+     
+}
+  
+.productCuatro { 
+    grid-area: accesCuatro;
+     
+}
+  
+.productCinco { 
+    grid-area: accesCinco;
+     
+}
+  
+.productSeis { 
+    grid-area: accesSeis;
+    
+}

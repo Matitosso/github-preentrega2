@@ -1,0 +1,59 @@
+.footerBox { 
+    display: grid;
+    background: linear-gradient(to top,$colorFooter);    
+    border: #ffcd43 solid 1px;
+    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    padding-left: 20px;
+    grid-template-areas:
+    "navegacion iconMP cotacto redSocial";
+  }
+  
+.navegacion { 
+    grid-area: navegacion;
+    p{
+        margin-top: 5px;
+    }
+    
+}
+  
+.iconMP { 
+    grid-area: iconMP;     
+    text-align:center;     
+    img{     
+    padding: 5px;
+    margin-top: 5px;        
+    }    
+     
+}
+
+  
+.contacto { 
+    grid-area: cotacto;
+    p{
+        margin-top: 5px;        
+    }     
+
+}
+  
+.redSocial { 
+    grid-area: redSocial;
+    a{
+    display: flex;    
+    padding: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        border-radius: 20%;
+    }
+
+}

@@ -1,0 +1,37 @@
+.headerBox{
+    grid-area: headerBox;
+    background-color: $colorLogo; 
+    border: #ffcd43 solid 1px;       
+    height: auto;
+    font-size: 1.0rem;
+    text-align: center;
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 200 px;
+    a{
+        background-color: $colorBotonHeader;
+        border: $colorBotonHeader solid 1px;
+    }
+    
+}
+.logo{
+    background-color: $colorLogo;    
+    align-items: flex-start;
+    img{
+        width: 400px;
+    }
+}
+.portada{    
+    background-color: $colorLogo;    
+    .btn-primary:hover{
+     background-color: $colorBotonHeaderHold;
+     border: $colorBotonHeaderHold solid 1px;
+     border-radius: 15%;
+    }
+    margin-bottom:20px;    
+}
+.vacio{
+    background-color: $colorLogo;
+    
+}

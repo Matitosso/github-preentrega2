@@ -1,0 +1,69 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "mainIndex";
+@import "mainProduc";
+@import "mainTips";
+@import "mainSomos";
+@import "mainCompra";
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+
+body{
+    background-color: #b0f8b0;
+    background-image: url(../iconos/imagenFondo.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-with: 480px){
+    body{
+        background-color: grey;        
+    }
+    .grilla{
+        background-color: fuchsia;
+        width: 100 vw;
+        height: 100 vh;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas: 
+          "headerBox"
+          "mainBox"
+          "footerBox";    
+        
+    }
+}
+
+@media screen and (max-with: 768px){
+    body{
+        background-color: grey;        
+    }
+    .grilla{
+        background-color: fuchsia;
+        width: 100 vw;
+        height: 100 vh;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+        gap: 0px 0px; 
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas: 
+          "headerBox"
+          "mainBox"
+          "footerBox";    
+        
+    }
+}

@@ -1,0 +1,138 @@
+.mainBox{
+    grid-area: mainBox;        
+    font-size: 1.5rem;
+    text-align: center;    
+    display: grid;    
+    margin:20px;
+            
+}
+.carrusel{
+    background: linear-gradient(to top,$colorCarrusel);    
+    height: 400px;
+    font-size: 1.5rem;
+    border: #f07b2d solid 1px;
+    text-align: center;        
+    display: grid; 
+    justify-content: space-around;
+    img{
+        width: 300px;
+        height: 397px;
+    }
+    transition:all 1s;
+    &:hover{
+        transform: scale($escalaCarr);
+    } 
+    
+}
+.categorias{
+    background-color: $colorCajaCat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    grid-template-areas:
+      "catA catPI catPE";
+      justify-items: center;
+      align-items: center;
+      
+
+      img{
+        width: 400px;
+        height: 250px;
+      }
+      div{
+        background: linear-gradient(to bottom, $colorCat);        
+        border: red solid 1px;
+      }
+} 
+
+.catA { 
+    grid-area: catA;
+    transition:all 1s;  
+    &:hover{
+        transform: scale($escalaCat);
+    }      
+    }
+
+      
+.catPI { 
+    grid-area: catPI;
+    transition:all 1s;
+    &:hover{
+        transform: scale($escalaCat);
+    }      
+    }
+
+      
+.catPE { 
+    grid-area: catPE;
+    transition:all 1s;   
+    &:hover{
+        transform: scale($escalaCat);
+    }   
+    }
+
+
+.destacados {  
+    display: grid;
+    background-color: $colorCajaDest;
+    border: #f07b2d solid 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas:
+    "destUno destDos destTres destCuatro";
+
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    div{
+        background: linear-gradient(to bottom, $colorDest);
+        border: gold solid 2px;
+        }
+    a{
+        color:black;
+    }
+    transition:all 1s;
+}
+
+.destUno { 
+    grid-area: destUno;  
+    transition:all 1s;
+    &:hover{
+        transform: scale($escalaDest);
+    }    
+}
+
+.destDos { 
+    grid-area: destDos; 
+    transition:all 1s;
+    &:hover{
+        transform: scale($escalaDest);
+    }    
+}
+
+.destTres {
+    grid-area: destTres;
+    transition:all 1s; 
+    &:hover{
+        transform: scale($escalaDest);
+    }     
+}
+     
+.destCuatro {
+    grid-area: destCuatro;
+    transition:all 1s; 
+    &:hover{
+        transform: scale($escalaDest);
+    }    
+}

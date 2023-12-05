@@ -1,290 +1,442 @@
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.headerBox {
+  grid-area: headerBox;
+  background-color: #8EB92A;
+  border: #ffcd43 solid 1px;
+  height: auto;
+  font-size: 1rem;
+  text-align: center;
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 200 px;
 }
-ul{
-    list-style-type: none;
-}
-
-
-body{
-    background-color: #b0f8b0;
-    background-image: url(../iconos/imagenFondo.png);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (min-with: 480px){
-    body{
-        background-color: grey;        
-    }
-    .grilla{
-        background-color: fuchsia;
-        width: 100 vw;
-        height: 100 vh;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas: 
-          "headerBox"
-          "mainBox"
-          "footerBox";    
-        
-    }
+.headerBox a {
+  background-color: #7ea425;
+  border: #7ea425 solid 1px;
 }
 
-@media screen and (max-with: 768px){
-    body{
-        background-color: grey;        
-    }
-    .grilla{
-        background-color: fuchsia;
-        width: 100 vw;
-        height: 100 vh;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 0.3fr 1.4fr 0.3fr; 
-        gap: 0px 0px; 
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas: 
-          "headerBox"
-          "mainBox"
-          "footerBox";    
-        
-    }
+.logo {
+  background-color: #8EB92A;
+  align-items: flex-start;
+}
+.logo img {
+  width: 400px;
 }
 
-
-
-
-
-.headerBox{
-    grid-area: headerBox;
-    background-color: #8EB92A; 
-    border: #ffcd43 solid 1px;       
-    height: 15vh;
-    font-size: 1.0rem;
-    text-align: center;
-    align-items: flex-end;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
-    grid-template-rows: 200 px;
+.portada {
+  background-color: #8EB92A;
+  margin-bottom: 20px;
 }
-.logo{
-    background-color: #8EB92A;    
-    align-items: flex-start;
-    
-}
-.portada{
-    background-color: #8EB92A;
-    
-}
-.vacio{
-    background-color: #8EB92A;
-    
+.portada .btn-primary:hover {
+  background-color: rgba(117, 152, 37, 0.1647058824);
+  border: rgba(117, 152, 37, 0.1647058824) solid 1px;
+  border-radius: 15%;
 }
 
-.mainBox{
-    grid-area: mainBox;        
-    font-size: 1.5rem;
-    text-align: center;    
-    display: grid;    
-    margin:20px;
-            
-}
-.carrusel{
-    background-color: #b6b6b6;
-    height: 400px;
-    font-size: 1.5rem;
-    border: #f07b2d solid 1px;
-    text-align: center;        
-    display: grid; 
-    justify-content: space-around;
-    
-}
-.categorias{
-    background-color: rgba(255, 166, 0, 0.399);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr;
-    gap: 0px 30px;
-    grid-auto-flow: row;
-    justify-content: space-around;
-    grid-template-areas:
-      "catA catPI catPE";
-      justify-items: center;
-      align-items: center;
-
-} 
-     
-.catA { 
-    grid-area: catA; 
-    background-color: yellow;
-    border: red solid 1px;
-    }
-      
-.catPI { 
-    grid-area: catPI; 
-    background-color: yellow;
-    border: red solid 1px;
-    }
-      
-.catPE { 
-    grid-area: catPE; 
-    background-color: yellow;
-    border: red solid 1px;
-    }
-
-.destacados {  
-    display: grid;
-    background-color: rgba(222, 189, 0, 0.316);
-    border: #f07b2d solid 1px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 30px;
-    grid-auto-flow: row;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-    grid-template-areas:
-    "destUno destDos destTres destCuatro";
+.vacio {
+  background-color: #8EB92A;
 }
 
-.destUno { 
-    grid-area: destUno; 
-    background-color: yellow;
-    border: gold solid 2px;
+.footerBox {
+  display: grid;
+  background: linear-gradient(to top, #f0eae2, #F5B565);
+  border: #ffcd43 solid 1px;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: stretch;
+  padding-left: 20px;
+  grid-template-areas: "navegacion iconMP cotacto redSocial";
 }
 
-.destDos { 
-    grid-area: destDos;
-    background-color: yellow;
-    border: gold solid 2px;
+.navegacion {
+  grid-area: navegacion;
+}
+.navegacion p {
+  margin-top: 5px;
+}
+
+.iconMP {
+  grid-area: iconMP;
+  text-align: center;
+}
+.iconMP img {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.contacto {
+  grid-area: cotacto;
+}
+.contacto p {
+  margin-top: 5px;
+}
+
+.redSocial {
+  grid-area: redSocial;
+}
+.redSocial a {
+  display: flex;
+  padding: 10px;
+}
+.redSocial img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 20%;
+}
+
+.mainBox {
+  grid-area: mainBox;
+  font-size: 1.5rem;
+  text-align: center;
+  display: grid;
+  margin: 20px;
+}
+
+.carrusel {
+  background: linear-gradient(to top, #b6b6b6, #ffffff, #b6b6b6);
+  height: 400px;
+  font-size: 1.5rem;
+  border: #f07b2d solid 1px;
+  text-align: center;
+  display: grid;
+  justify-content: space-around;
+  transition: all 1s;
+}
+.carrusel img {
+  width: 300px;
+  height: 397px;
+}
+.carrusel:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.categorias {
+  background-color: rgba(248, 208, 133, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  grid-template-areas: "catA catPI catPE";
+  justify-items: center;
+  align-items: center;
+}
+.categorias img {
+  width: 400px;
+  height: 250px;
+}
+.categorias div {
+  background: linear-gradient(to bottom, #ffff00, #ffff5f);
+  border: red solid 1px;
+}
+
+.catA {
+  grid-area: catA;
+  transition: all 1s;
+}
+.catA:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.catPI {
+  grid-area: catPI;
+  transition: all 1s;
+}
+.catPI:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.catPE {
+  grid-area: catPE;
+  transition: all 1s;
+}
+.catPE:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.destacados {
+  display: grid;
+  background-color: rgba(222, 189, 0, 0.3176470588);
+  border: #f07b2d solid 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "destUno destDos destTres destCuatro";
+  transition: all 1s;
+}
+.destacados img {
+  width: 300px;
+  height: 200px;
+}
+.destacados div {
+  background: linear-gradient(to bottom, #ffff00, #ffff5f);
+  border: gold solid 2px;
+}
+.destacados a {
+  color: black;
+}
+
+.destUno {
+  grid-area: destUno;
+  transition: all 1s;
+}
+.destUno:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.destDos {
+  grid-area: destDos;
+  transition: all 1s;
+}
+.destDos:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .destTres {
-    grid-area: destTres; 
-    background-color: yellow;
-    border: gold solid 2px;
+  grid-area: destTres;
+  transition: all 1s;
 }
-      
-.destCuatro {
-    grid-area: destCuatro;
-    background-color: yellow;
-    border: gold solid 2px;
-}  
+.destTres:hover {
+  transform: scale(1.1, 1.1);
+}
 
-.footerBox { 
+.destCuatro {
+  grid-area: destCuatro;
+  transition: all 1s;
+}
+.destCuatro:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.mainProduc {
+  display: grid;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background: linear-gradient(to top, #f0f565, #f0eae2, #f0f565);
+  border: #ff902f;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 10px;
+  grid-template-areas: "productUno productDos productTres" "productCuatro productCinco productSeis";
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.mainProduc div {
+  background-color: rgba(0, 255, 72, 0.3568627451);
+  border: #a29595 solid 2px;
+  width: auto;
+  height: auto;
+}
+.mainProduc img {
+  width: 300px;
+  height: 200px;
+}
+.mainProduc a {
+  color: black;
+}
+
+.product:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.productUno {
+  grid-area: accesUno;
+}
+
+.productDos {
+  grid-area: accesDos;
+}
+
+.productTres {
+  grid-area: accesTres;
+}
+
+.productCuatro {
+  grid-area: accesCuatro;
+}
+
+.productCinco {
+  grid-area: accesCinco;
+}
+
+.productSeis {
+  grid-area: accesSeis;
+}
+
+.mainTips {
+  display: grid;
+  height: auto;
+  font-size: 1 rem;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(224, 244, 185, 0.5882352941);
+  border: #ffcd43 solid 1px;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  align-content: space-evenly;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.titTips {
+  background-color: rgba(203, 214, 187, 0.4784313725);
+}
+
+.tip {
+  background: radial-gradient(circle, rgba(190, 204, 170, 0.7137254902), rgba(240, 240, 236, 0.6039215686));
+}
+
+.mainSomos {
+  background: radial-gradient(circle, rgba(128, 128, 128, 0.7254901961), rgba(240, 240, 236, 0.6039215686));
+  padding: 20px;
+  margin: 20px;
+}
+.mainSomos p {
+  font-size: 1.3rem;
+}
+.mainSomos aside {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 50px;
+}
+.mainSomos aside img {
+  width: 400px;
+  height: 300px;
+}
+.mainSomos address {
+  display: flex;
+  gap: 20px;
+}
+.mainSomos address img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+}
+.mainSomos address a {
+  transition: all 1s;
+}
+.mainSomos address a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.grillaProducto {
+  background-color: fuchsia;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas: "headerBox" "mainProduc" "footerBox";
+}
+
+.mainCompra {
+  height: auto;
+  background: linear-gradient(to top, rgba(201, 201, 201, 0.7450980392), rgba(240, 234, 226, 0.662745098), rgba(201, 201, 201, 0.7450980392));
+  display: grid;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imgCompra infoCompra";
+  justify-items: center;
+  align-items: center;
+}
+
+.imgCompra {
+  grid-area: imgCompra;
+}
+.imgCompra img {
+  width: auto;
+  height: auto;
+  transition: all 1s;
+}
+.imgCompra img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.infoCompra {
+  grid-area: infoCompra;
+}
+.infoCompra .radioBoton input {
+  margin: 20px;
+}
+.infoCompra select {
+  margin: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #b0f8b0;
+  background-image: url(../iconos/imagenFondo.png);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-with: 480px) {
+  body {
+    background-color: grey;
+  }
+  .grilla {
+    background-color: fuchsia;
+    width: 100 vw;
+    height: 100 vh;
     display: grid;
-    background-color: #F5B565;
-    border: #ffcd43 solid 1px;
-    text-align: left;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 30px;
-    grid-auto-flow: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
     justify-items: stretch;
     align-items: stretch;
-    grid-template-areas:
-    "navegacion iconMP cotacto redSocial";
+    grid-template-areas: "headerBox" "mainBox" "footerBox";
   }
-  
-.navegacion { 
-    grid-area: navegacion;
-    
 }
-  
-.iconMP { 
-    grid-area: iconMP;      
-    justify-content:space-around;    
-    
-}
-  
-.contacto { 
-    grid-area: cotacto;     
-
-}
-  
-.redSocial { 
-    grid-area: redSocial;     
-
-}  
-
-.grillaProducto{
+@media screen and (max-with: 768px) {
+  body {
+    background-color: grey;
+  }
+  .grilla {
     background-color: fuchsia;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "headerBox"
-      "mainProduc"
-      "footerBox";
-}
-.mainProduc {  
+    width: 100 vw;
+    height: 100 vh;
     display: grid;
-    font-size: 1.5rem;
-    text-align: center;           
-    margin:20px;
-    background-color: yellow;
-    border: red solid 2px;
-    grid-auto-flow: column;    
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;    
-    gap: 10px 10px;    
-    grid-template-areas:
-    "productUno productDos productTres"
-    "productCuatro productCinco productSeis";
-
-    align-content: center; 
-    justify-content: center;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.4fr 0.3fr;
+    gap: 0px 0px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: "headerBox" "mainBox" "footerBox";
+  }
 }
 
-
-
-.productUno { 
-    grid-area: accesUno; 
-    background-color: #00ff48;
-    border: red solid 2px;
-}
-  
-.productDos { 
-    grid-area: accesDos; 
-    background-color: #00ff48;
-    border: red solid 2px;
-}
-  
-.productTres { 
-    grid-area: accesTres;
-    background-color: #00ff48;
-    border: red solid 2px; 
-}
-  
-.productCuatro { 
-    grid-area: accesCuatro;
-    background-color: #00ff48;
-    border: red solid 2px; 
-}
-  
-.productCinco { 
-    grid-area: accesCinco;
-    background-color: #00ff48;
-    border: red solid 2px; 
-}
-  
-.productSeis { 
-    grid-area: accesSeis;
-    background-color: #00ff48;
-    border: red solid 2px; 
-}
-  
-
+/*# sourceMappingURL=estilo.css.map */

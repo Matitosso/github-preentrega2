@@ -1,0 +1,26 @@
+.mainTips{
+    display: grid;
+    height: auto;
+    font-size: 1.0 rem;
+    text-align:left; 
+    padding: 20px;         
+    margin:20px;
+    background-color: $colorMainTips;
+    border: #ffcd43 solid 1px;
+    grid-auto-flow: row;    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;    
+    gap: 10px 10px;
+    align-content: space-evenly; 
+    justify-items: stretch; 
+    align-items: center;
+    
+}
+
+.titTips{
+    background-color:$colorCajaTips;
+}
+
+.tip{
+    background: radial-gradient(circle,$colorTips);
+}
