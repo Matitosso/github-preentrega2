@@ -24,46 +24,116 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-with: 480px){
-    body{
-        background-color: grey;        
-    }
-    .grilla{
-        background-color: fuchsia;
-        width: 100 vw;
-        height: 100 vh;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas: 
-          "headerBox"
-          "mainBox"
-          "footerBox";    
-        
-    }
-}
 
-@media screen and (max-with: 768px){
-    body{
-        background-color: grey;        
-    }
-    .grilla{
-        background-color: fuchsia;
-        width: 100 vw;
+
+@media screen and (max-width: 768px){
+      .headerBox{               
         height: 100 vh;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 0.3fr 1.4fr 0.3fr; 
-        gap: 0px 0px; 
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas: 
-          "headerBox"
-          "mainBox"
-          "footerBox";    
+        width: 100 vw;
+        font-size: 1.0rem;
+        text-align: center;
+        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 1.5fr auto auto auto auto;
+        grid-template-rows: 200 px;
+        a{
+            background-color: $colorBotonHeader;
+            border: $colorBotonHeader solid 1px;
+        }
         
     }
+    .logo{              
+        img{
+            width: 30vw;
+            
+        }
+    }
+    .portada{ 
+        a{
+            font-size: 0.7rem;
+        }                
+        margin-bottom:0px;
+        margin: 10px;           
+    } 
+    .carrusel{
+        height: auto;
+        img{
+            width: 40vw;
+            height: 48vh;
+        }
+        
+    }
+
+    .categorias{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "catA"
+        "catPI" 
+        "catPE";
+        img{
+        width: 40vw;
+        height: 25vh;        
+        }
+        gap:10px;
+        padding:10px;
+    }
+    .destacados{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "destUno destDos"
+        "destTres destCuatro";
+
+        img{
+            width: 25vw;
+            height: 20vh;
+        }
+        gap:10px;
+        padding:10px;
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .mainSomos{
+        aside{
+            img{
+                width: 40vw;
+                height: 30vh;
+            }
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .footerBox{
+        a{
+            font-size: 0.8rem;
+        }
+        em{
+            font-size: 0.9rem;
+        }
+    }
+    .mainProduc{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas:
+        "productUno productDos"
+        "productTres productCuatro"
+        "productCinco productSeis";
+        img{
+            width: 25vw;
+            height: 20vh;
+        }
+        gap:10px;
+        padding:10px;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .infoCompra{
+        margin-left: 20px;
+    }
+        
 }
